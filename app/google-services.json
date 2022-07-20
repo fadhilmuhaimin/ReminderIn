@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "287145157440",
+    "project_id": "udrug-24ea7",
+    "storage_bucket": "udrug-24ea7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287145157440:android:265e68761b27bb1f6190a5",
+        "android_client_info": {
+          "package_name": "com.autodhil.reminderin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "287145157440-bt3bs5hdqcd2mqojg3842t9i1456gm6u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.autodhil.reminderin",
+            "certificate_hash": "415715ec6f873f8afc5edb6c33ba1d1082139961"
+          }
+        },
+        {
+          "client_id": "287145157440-4p2essl8ogbej5srhva0fp790ver6v8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD62HwiTE_B00TJ7Cf519BSjANAk0mVfbc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "287145157440-4p2essl8ogbej5srhva0fp790ver6v8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

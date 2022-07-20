@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.home.HomeFragment"
+        android:background="@color/primary_color">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/profil"
+            app:layout_constraintBottom_toBottomOf="@id/profil"
+            android:layout_marginStart="@dimen/_16dp"
+            android:src="@drawable/ic_loginicon"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/sub"
+            app:layout_constraintBottom_toTopOf="@id/sub"
+            style="@style/DMSansRegular14grey"
+            android:text="Hi, Nurul Fadilla"
+            android:layout_marginBottom="@dimen/_4dp"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/profil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:src="@drawable/ic_profil_icon" />
+
+        <TextView
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/guideline2"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:layout_marginStart="@dimen/_16dp"
+            style="@style/DMSansBoldTitle"
+            android:text="Let's Start Manage Patient!"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_card"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline2"
+            android:id="@+id/base" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.185" />
+
+        <ImageView
+            android:id="@+id/bg_shadow"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_110dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:scaleType="fitXY"
+            app:layout_constraintTop_toTopOf="@id/base"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="@dimen/_16dp"
+            android:src="@drawable/background_shadow" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="@id/bg_shadow"
+            app:layout_constraintTop_toTopOf="@id/bg_shadow"
+            app:layout_constraintBottom_toBottomOf="@id/bg_shadow"
+            app:layout_constraintEnd_toEndOf="@id/bg_shadow"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/bg_shadow"
+                app:layout_constraintEnd_toEndOf="@id/bg_shadow"
+                app:layout_constraintTop_toTopOf="@id/bg_shadow"
+                app:layout_constraintBottom_toBottomOf="@id/bg_shadow"
+                android:text="17"
+                style="@style/DMSansBoldTitle"
+                android:textSize="@dimen/_35sp"
+                android:textColor="@color/primary_color"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/bg_shadow"
+                app:layout_constraintEnd_toEndOf="@id/bg_shadow"
+                app:layout_constraintTop_toBottomOf="@id/number"
+                android:layout_marginBottom="@dimen/_16dp"
+                android:text="Total Pasien Hari Ini"
+                style="@style/DMSansMedium14black"
+                android:layout_marginTop="@dimen/_4dp" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="@dimen/_8dp"
+            android:id="@+id/card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_8dp"
+            app:layout_constraintEnd_toStartOf="@id/guideline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bg_shadow">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_16dp">
+
+                <TextView
+                    android:id="@+id/tv_aktivitas"
+                    style="@style/DMSansRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Patuh"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ProgressBar
+                    android:id="@+id/progresss"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="@dimen/_200dp"
+                    android:layout_height="@dimen/_95dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progressDrawable="@drawable/circular"
+                    android:secondaryProgress="100"
+                    android:indeterminateTint="@color/primary_color"
+                    android:indeterminateTintMode="src_atop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_aktivitas" />
+
+                <TextView
+                    android:id="@+id/txtPersen"
+                    style="@style/DMSansBoldTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100%"
+                    android:textSize="@dimen/_18sp"
+                    app:layout_constraintBottom_toBottomOf="@id/progresss"
+                    app:layout_constraintEnd_toEndOf="@id/progresss"
+                    app:layout_constraintStart_toStartOf="@id/progresss"
+                    app:layout_constraintTop_toTopOf="@id/progresss" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="@dimen/_8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@id/bg_shadow">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_16dp">
+
+                <TextView
+                    android:id="@+id/tv_edukasi"
+                    style="@style/DMSansRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak Patuh"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ProgressBar
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:id="@+id/progresss_buku"
+                    android:layout_width="@dimen/_200dp"
+                    android:layout_height="@dimen/_95dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progressDrawable="@drawable/circular"
+                    android:secondaryProgress="100"
+                    android:indeterminateTint="@color/primary_color"
+                    android:indeterminateTintMode="src_atop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_edukasi" />
+
+                <TextView
+                    android:id="@+id/txtIsReading"
+                    style="@style/DMSansBoldTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0%"
+                    android:textSize="@dimen/_18sp"
+                    app:layout_constraintBottom_toBottomOf="@id/progresss_buku"
+                    app:layout_constraintEnd_toEndOf="@id/progresss_buku"
+                    app:layout_constraintStart_toStartOf="@id/progresss_buku"
+                    app:layout_constraintTop_toTopOf="@id/progresss_buku" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/title_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/card"
+            app:layout_constraintTop_toBottomOf="@id/card"
+            android:layout_marginTop="@dimen/_16dp"
+            style="@style/DMSansBoldTitle"
+            android:text="Pasien Dalam Pengawasan" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_pengawasan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/title_list"
+            android:layout_marginTop="@dimen/_16dp"
+            tools:listitem="@layout/item_pengawasan"
+            tools:itemCount="5" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
