@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ReminderIn">
         <activity
-            android:name=".AdminLoginActivity"
+            android:name=".RegistAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.admin.AdminMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.admin.AdminLoginActivity"
             android:exported="false" />
         <activity
             android:name=".ui.auth.AutentikasiActivity"
@@ -26,7 +32,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

@@ -75,6 +75,17 @@
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <TextView
+        android:id="@+id/tvModeAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout4"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Mode Admin"
+        android:textStyle="bold"
+        android:textColor="@color/primary_color"
+        android:layout_marginTop="@dimen/_12dp"
+        android:layout_marginRight="@dimen/_16dp"/>
 
     <Button
         android:id="@+id/masuk"

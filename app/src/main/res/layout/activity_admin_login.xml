@@ -4,6 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="@dimen/_16dp"
     tools:context=".ui.admin.AdminLoginActivity">
+
+    <TextView
+        android:drawableLeft="@drawable/auth_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin"
+        android:textStyle="bold"
+        android:textSize="@dimen/_24sp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/etEmailAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:hint="Masukkan email"
+            android:drawableLeft="@drawable/ic_email_admin"
+            android:drawablePadding="@dimen/_8dp"
+            android:padding="@dimen/_8dp"/>
+
+        <EditText
+            android:id="@+id/etPassAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:inputType="textPassword"
+            android:hint="Masukkan password"
+            android:drawableLeft="@drawable/ic_pass_admin"
+            android:drawablePadding="@dimen/_8dp"
+            android:padding="@dimen/_8dp"
+            android:layout_marginTop="@dimen/_24dp"/>
+
+        <Button
+            android:id="@+id/btnLoginAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_12dp"
+            android:layout_marginTop="50dp"
+            android:text="Masuk"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bukan admin? "
+                android:layout_marginTop="@dimen/_12dp"
+                android:textSize="@dimen/_14sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvToMainLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masuk Apoteker"
+                android:layout_marginTop="@dimen/_12dp"
+                android:textSize="@dimen/_14sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_color"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

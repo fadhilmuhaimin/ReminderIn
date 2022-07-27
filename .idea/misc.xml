@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/ReminderIn/app/src/main/res/drawable/ic_email_admin.xml" value="0.2295" />
+        <entry key="..\:/AndroidStudioProjects/ReminderIn/app/src/main/res/drawable/ic_id_admin.xml" value="0.1345" />
+        <entry key="..\:/AndroidStudioProjects/ReminderIn/app/src/main/res/drawable/ic_pass_admin.xml" value="0.1775" />
+        <entry key="..\:/AndroidStudioProjects/ReminderIn/app/src/main/res/layout/activity_admin_login.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/ReminderIn/app/src/main/res/layout/activity_admin_main.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/ReminderIn/app/src/main/res/layout/activity_autentikasi.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/ReminderIn/app/src/main/res/layout/activity_regist_admin.xml" value="0.25" />
         <entry key="..\:/Project/ReminderIn/app/src/main/res/drawable/bg_card.xml" value="0.1685" />
         <entry key="..\:/Project/ReminderIn/app/src/main/res/drawable/bg_input.xml" value="0.161" />
         <entry key="..\:/Project/ReminderIn/app/src/main/res/drawable/circular.xml" value="0.1" />
