@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ReminderIn">
         <activity
-            android:name=".RegistAdminActivity"
+            android:name=".ui.admin.AdminRegistActivity"
             android:exported="false" />
         <activity
             android:name=".ui.admin.AdminMainActivity"
