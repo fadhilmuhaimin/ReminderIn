@@ -60,13 +60,13 @@
 
         <EditText
             android:layout_marginTop="12dp"
-            android:id="@+id/et_jabatan"
+            android:id="@+id/et_pass"
             android:drawableLeft="@drawable/ic_id_admin"
             android:drawablePadding="@dimen/_8dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@color/white"
-            android:hint="Masukkan jabatan"/>
+            android:hint="Masukkan password"/>
 
         <EditText
             android:layout_marginTop="12dp"

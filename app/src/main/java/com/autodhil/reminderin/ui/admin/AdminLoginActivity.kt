@@ -27,7 +27,7 @@ class AdminLoginActivity : AppCompatActivity() {
             val email = binding.etEmailAdmin.text.toString()
             val pass = binding.etPassAdmin.text.toString()
 
-            if (email!=null && pass!=null) {
+            if (!email.equals("")||!pass.equals("")) {
                 checkDataAdmin(email, pass)
             }
             else {
