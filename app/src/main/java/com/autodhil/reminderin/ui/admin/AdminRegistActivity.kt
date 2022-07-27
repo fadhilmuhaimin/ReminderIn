@@ -24,9 +24,11 @@ class AdminRegistActivity : AppCompatActivity() {
         binding.btnSaveData.setOnClickListener{
             val id = binding.etId.text.toString()
             val name = binding.etNama.text.toString()
-            val pass = binding.etPass.text.toString()
+            val jabatan = binding.etJabatan.text.toString()
         }
     }
+
+    //NOTE : Belum ditambahkan model admin
 
     private fun SaveData() {
 
